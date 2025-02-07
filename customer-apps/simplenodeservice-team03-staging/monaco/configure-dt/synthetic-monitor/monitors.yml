@@ -1,0 +1,14 @@
+configs:
+- id: simplenodeservice-team03-staging_synthetic
+  config:
+    name: "Healthcheck simplenodeservice-team03-staging"
+    parameters:
+      baseUrl: "https://stunning-space-giggle-6jqr95gr4w36g7-80.app.github.dev/simplenodeservice-team03-staging"
+      frequencyMin: "1"
+      enabled: "true"
+      geoLocation: "GEOLOCATION-45AB48D9D6925ECC"
+      teamIdentifier: "team03"
+    template: health-check-http.json
+    skip: false
+  type:
+    api: synthetic-monitor
